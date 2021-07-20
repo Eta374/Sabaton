@@ -1,0 +1,704 @@
+/* DOCUMENT INFORMATION
+
+- Document: Evaluation Sabaton
+- version: 1.0.0
+- author: Elouan
+*/
+
+/* COLORS 
+
+- Header haut = #a57f68
+- Header bas = #000000
+- Main info =   #a57f68
+- Main disco = ##b6a9a0
+- Btn background = #3b3f40
+      color = #e5e0cc
+
+*/ 
+
+/* FONTS
+
+Titre:    font-family: 'Metal Mania', cursive;
+P:    font-family: 'Metamorphous', cursive;
+
+*/
+
+
+/*
+================================ GLOBAL ================================ */
+
+h1 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Metamorphous', cursive;
+    font-size: 15px;
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*
+================================ HEADER ================================ */
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    .header-h {
+        background-color: #a57f68;
+        height: 8vh;
+        display: flex;
+
+        .h-txt1 {
+            display: flex;
+            width: 60%;
+            justify-content: flex-end;
+
+        }
+
+        .h-txt2 {
+            display: flex;
+            width: 30%;
+            justify-content: flex-end;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin-left: 5px;
+            align-self: center;
+        }
+
+        i {
+            align-self: center;
+            margin-left: 35px;
+        }
+    }
+
+    .header-b {
+        background-color: #000000;
+        height: 8vh;
+
+        .contenu {
+            display: flex;
+            justify-content: space-around;
+            height: 8vh;
+
+            .contenu2 {
+                display: flex;
+                height: 8vh;
+                width: 45rem;
+                justify-content: space-evenly;
+            }
+
+            li, a {
+                display: flex;
+                text-decoration: none;
+                align-self: center;
+                color: white;
+
+                    a:hover {
+                    color: #a57f68;
+                    -webkit-transition: all 0.6s;
+                    transition: all 0.6s;
+                  }
+            }
+        }
+    }
+
+}
+
+/*
+================================================================= MAIN ================================================================= */
+
+/*
+================================ IMG ================================ */
+
+.main-img {
+    display: flex;
+    background-image: url(../Images/background/wp5989917.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    background-position: center;
+    justify-content: center;
+
+    .main-img-txt {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+
+        
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            padding: 10px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 1s, color 1s, border 1s;
+            margin: 10px;
+            width: 30%;
+        }
+        
+        .btn-full {
+            background-color: #3b3f40;
+            color: #e5e0cc;
+            margin-right: 15px;
+            font-family: 'Metamorphous', cursive;
+        }
+    }
+
+    h1 {
+        color: #e5e0cc;
+        text-shadow: 1px 1px 2px #362e31, 0 0 1em #2b1005, 0 0 0.2em #311c06;
+        font-size: 45px;
+    }
+
+    p {
+        color: #e5e0cc;
+        text-shadow: 1px 1px 2px #362e31, 0 0 1em #2b1005, 0 0 0.2em #311c06;
+        font-size: 20px;
+        padding-top: 100px;
+    }
+        
+}
+
+/*
+================================ INFO ================================ */
+
+.main-info {
+    display: flex;
+    height: 60vh;
+    background-color: #a57f68;
+
+
+    p {
+        font-size: 12px;
+    }
+
+    .main-info-txt {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        max-width: 50%;
+
+        a {
+            display: flex;
+            justify-content: flex-start;
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+        }
+
+        h1::after {
+            display: block;
+            height: 2px;
+            background-color: #e5e0cc;
+            width: 400px;
+            content: " ";
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+    }
+
+    .main-info-img {
+        height: 60vh;
+        width: 50%;
+    }
+}
+
+.info-mar {
+    display: flex;
+    height: 60vh;
+    background-color: #a57f68;
+    width: 80%;
+
+}
+
+/*
+================================ DISCO ================================ */
+
+.disco {
+    display: flex;
+    height: 70vh;
+    background-color: #b6a9a0;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    h1::after {
+        display: block;
+        height: 2px;
+        background-color: #e5e0cc;
+        width: 400px;
+        content: " ";
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .disco-contenu {
+        display: flex;
+        height: 50vh;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 20px;
+
+        .disco-img {
+            display: flex;
+            height: 45vh;
+            width: 20%;
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                text-align: center;
+                font-size: 15px;
+                padding-top: 0;
+            }
+
+            img {
+                height: 25vh;
+                width: auto;
+                padding: 10px;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    h2 {
+        font-family: 'Metal Mania', cursive;
+        font-size: 25px;
+        color: black;
+    }
+}
+
+/*
+================================ DISTINCTIONS ================================ */
+
+.distinctions {
+    display: flex;
+    height: 70vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/Main/Recompense/Gold1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        color: white;
+        font-size: 50px;
+    }
+
+    h2 {
+        color: darkgray;
+    }
+
+    p {
+        color: white;
+    }
+
+    .main-dis-titre {
+        margin-bottom: 30px;
+    }
+
+    .main-dis-txt {
+        justify-content: space-evenly!important;
+    }
+
+    .main-dis-titre, .main-dis-txt {
+        display: flex;
+        height: 10vh;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-dis-award {
+        display: flex;
+        flex-direction: column;
+        max-width: 15%;
+    }
+}
+
+/*
+================================ GROUPE ================================ */
+
+.main-groupe {
+    display: flex;
+    height: 110vh;
+    background-color: #a57f68;
+    flex-direction: column;
+
+    h1 {
+        margin-top: 30px;
+    }
+
+    h1::after {
+        display: block;
+        height: 2px;
+        background-color: #e5e0cc;
+        width: 400px;
+        content: " ";
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .main-groupe-img {
+        display: flex;
+        height: 70vh;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .main-groupe-logo {
+        display: flex;
+        height: 30vh;
+        background-color: #a57f68;
+        justify-content: space-around;
+        margin-top: 30px;
+
+    }
+}
+
+.groupe-img {
+    width: 15%;
+
+    a {
+        text-decoration: none;
+        color: darkgray;
+    }
+
+    p {
+        margin-left: 0;
+    }
+
+    h3 {
+        font-size: 17px;
+
+        span {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    img {
+        height: 30vh;
+        margin-left: 30px;
+        margin-bottom: 15px;
+    
+    }
+}
+
+.main-groupe-logo {
+    .basse {
+        height: 19vh;
+        margin-right: 7%;
+    }
+
+    .batterie {
+        height: 20vh;
+    }
+
+    .clavier {
+        height: 22vh;
+    }
+
+    .guitare {
+        height: 19vh;
+        margin-right: 3%;
+    }
+}
+
+/*
+================================ AVIS ================================ */
+
+.avis {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    background-color: #b6a9a0;
+
+    h3 {
+        font-size: 15px;
+    }
+
+    img {
+        height: 15vh;
+        border-radius: 20px;
+    }
+
+    .avis-titre {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            margin-top: 30px;
+        }
+    
+        h1::after {
+            display: block;
+            height: 2px;
+            background-color: #e5e0cc;
+            width: 400px;
+            content: " ";
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    }
+
+    .avis-txt {
+        display: flex;
+        height: 80vh;
+        justify-content: center;
+        padding-top: 30px;
+
+        .avis-b1 {
+            display: flex;
+            height: 70vh;
+            width: 30%;
+            flex-direction: column;
+        }
+
+        .avis-b2 {
+            display: flex;
+            height: 70vh;
+            width: 30%;
+            flex-direction: column;
+        }
+    }
+}
+
+.avis-b1 {
+    .avis-kenny {
+        display: flex;
+        height: 30vh;
+        width: 80%;
+
+        .kenny-img p {
+            font-size: 7px;
+        }
+
+        .kenny-txt {
+            margin-left: 15px;
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .avis-jesus {
+        display: flex;
+        height: 30vh;
+        width: 80%;
+
+        .jesus-img p {
+            font-size: 7px;
+        }
+
+        .jesus-txt {
+            margin-left: 15px;
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.avis-b2 {
+    .avis-anakin {
+        display: flex;
+        height: 30vh;
+        width: 80%;
+
+        .anakin-img p {
+            font-size: 7px;
+        }
+
+        .anakin-txt {
+            margin-left: 15px;
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .avis-gandalf {
+        display: flex;
+        height: 30vh;
+        width: 80%;
+
+        .gandalf-img p {
+            font-size: 7px;
+        }
+
+        .gandalf-txt {
+            margin-left: 15px;
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.dont-click {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/*
+================================ FOOTER ================================ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    height: 70vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+
+    h2 {
+        color: #a57f68;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    p {
+        color: #b6a9a0;
+    }
+
+    .footer-b1 {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 30%;
+
+        .icon {
+            display: flex;
+            align-items: center;
+
+            i {
+                padding-left: 10px;
+                color: #a57f68;
+            }
+        }
+
+        .footer-icon::after {
+            display: block;
+            height: 1px;
+            background-color: #e5e0cc;
+            width: 315px;
+            content: " ";
+            align-self: center;
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: #a57f68;
+        }
+
+        a::after {
+            display: block;
+            height: 2px;
+            background-color: #e5e0cc;
+            width: 120px;
+            content: " ";
+            align-self: center;
+            margin-left: 15px;
+        }
+
+        .footer-input {
+            display: flex;
+        }
+
+        .btn-sub {
+            width: 35%;
+            color: white;
+            background-color: #a57f68;
+        }
+        
+    }
+
+    .footer-b2 {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 30%;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #a57f68;
+            margin-left: 10px;
+        }
+
+        .news {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .news-txt {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            height: 10vh;
+            width: 120px;
+        }
+    }
+
+    .footer-b3 {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 30%;
+    }
+}
+
+.copyright {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.photo-col {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+
+    .photo-row {
+        display: flex;
+        height: 15vh;
+
+        img {
+            width: 30%;
+        }
+    }
+}
